@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: user-service
+  config:
+    import: optional:configserver:http://localhost:8888 # we are specifying the config server url here; optional means if config server is down, app will still start
